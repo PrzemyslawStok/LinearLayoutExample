@@ -23,6 +23,30 @@
         android:text="Przykładowy tekst"
         android:textSize="20sp"
         />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:text="Przykładowy tekst"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:text="Przykładowy tekst"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:text="Przykładowy tekst"
+        android:textSize="20sp"
+        />
     <Button
         android:id="@+id/button0"
         android:layout_width="match_parent"

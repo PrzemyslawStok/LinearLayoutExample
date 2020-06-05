@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         button0.setOnClickListener {
             liczbaKlikniec++
             text1.setText("Liczba kliknięć ${liczbaKlikniec}")
+            text2.setText("Liczba kliknięć ${liczbaKlikniec+1}")
             if(kolory) {
                 text1.setBackgroundColor(Color.CYAN)
                 text2.setBackgroundColor(Color.WHITE)
