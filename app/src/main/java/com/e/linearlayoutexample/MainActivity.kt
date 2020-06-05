@@ -33,5 +33,12 @@ class MainActivity : AppCompatActivity() {
 
             kolory = !kolory
         }
+
+        resetButton.setOnClickListener {
+            liczbaKlikniec = 0;
+
+            text1.setText("Liczba kliknięć ${liczbaKlikniec}")
+            text2.setText("Liczba kliknięć ${liczbaKlikniec+1}")
+        }
     }
 }
