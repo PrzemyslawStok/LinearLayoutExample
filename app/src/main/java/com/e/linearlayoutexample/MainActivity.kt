@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         wyswietl()
 
         button0.setOnClickListener {
+
             liczbaKlikniec++
             wyswietl()
 
