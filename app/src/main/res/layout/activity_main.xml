@@ -4,14 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:background="#00BCD4"
         android:text="Przykładowy tekst"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#009688"
+        android:text="Przykładowy tekst"
+        android:textSize="20sp"
         />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
