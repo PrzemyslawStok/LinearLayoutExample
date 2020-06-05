@@ -6,6 +6,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    var liczbaKlikniec = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,14 +16,13 @@ class MainActivity : AppCompatActivity() {
         text2.setBackgroundColor(Color.CYAN)
 
         var kolory = true
-        var liczbaKlikniec = 0
 
-        text1.setText("Liczba kliknięć ${liczbaKlikniec}")
+        wyswietl()
 
         button0.setOnClickListener {
             liczbaKlikniec++
-            text1.setText("Liczba kliknięć ${liczbaKlikniec}")
-            text2.setText("Liczba kliknięć ${liczbaKlikniec+1}")
+            wyswietl()
+
             if(kolory) {
                 text1.setBackgroundColor(Color.CYAN)
                 text2.setBackgroundColor(Color.WHITE)
@@ -37,8 +37,12 @@ class MainActivity : AppCompatActivity() {
         resetButton.setOnClickListener {
             liczbaKlikniec = 0;
 
-            text1.setText("Liczba kliknięć ${liczbaKlikniec}")
-            text2.setText("Liczba kliknięć ${liczbaKlikniec+1}")
+            wyswietl()
         }
+    }
+
+    fun wyswietl(){
+        text1.setText("Liczba kliknięć ${liczbaKlikniec}")
+        text2.setText("Liczba kliknięć ${liczbaKlikniec+1}")
     }
 }
